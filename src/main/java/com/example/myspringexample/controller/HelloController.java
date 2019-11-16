@@ -52,6 +52,7 @@ public class HelloController {
         logger.info("users from db [{}]", users);
 
         modelAndView.addObject("allUsers", userService.getAllUsers());
+        modelAndView.addObject("new-attribute","empty");
         modelAndView.setViewName("hello/users");
         return modelAndView;
     }
